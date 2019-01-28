@@ -64,8 +64,13 @@
     </div>
   </header>
   <!----Contenido-->
-  {% block contenido %}
-  {% endblock %}
+
+   <div class="container">
+      
+          {% block contenido %}{% endblock %}
+      
+    </div>
+    {% if request.path != "/" %}<hr>{% endif %}  
   <!-- Pié de página -->
   <footer>
     <div class="container">
